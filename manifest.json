@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "BaitBuster NAME REVISE",
+    "version": "1.0",
+    "description": "Alerts potential fake news, clickbait, and/or satire links",
+    "content_scripts": [
+        {
+          "js": [
+            "./jquery.min.js",
+            "./main.js"
+          ],
+          
+          "matches":["<all_urls>"]
+        }
+    ]
+}
