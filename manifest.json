@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "BaitBuster NAME REVISE",
+    "name": "BaitBuster",
     "version": "1.0",
     "description": "Alerts potential fake news, clickbait, and/or satire links",
     "content_scripts": [
@@ -15,5 +15,11 @@
             "https://www.google.com/*"
           ]
         }
-    ]
+    ],
+    "browser_action": {
+      "default_title": "Extension Name",
+      "default_icon": "extensionicon.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": ["tabs"]
 }
