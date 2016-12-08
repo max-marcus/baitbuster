@@ -9,8 +9,13 @@
             "./jquery.min.js",
             "./main.js"
           ],
-          
+
           "matches":["<all_urls>"]
         }
-    ]
+    ],
+    "page_action": {
+      "default_title": "Extension Name",
+      "default_icon": "extensionicon.png",
+      "default_popup": "popup.html"
+    }
 }
