@@ -1,0 +1,28 @@
+html {
+
+}
+
+
+#warning {
+  height: 21px;
+  width: 110px;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  background-color: red;
+
+}
+
+#feedback {
+  height: 60px;
+  width: 110px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+button {
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: white;
