@@ -11,13 +11,44 @@
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
+        background: black;
+        color: white;
       }
-      #status {
+      #feedback {
         /* avoid an excessively wide status text */
-        white-space: pre;
         text-overflow: ellipsis;
         overflow: hidden;
-        max-width: 400px;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      button {
+        background-color: red;
+        font-color: black;
+        padding: 8px 5px;
+        font-size: 14px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 50px;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: red;
+        box-shadow: -1px 1px 2px white;
+        color: black;
+      }
+      button:active {
+        background-color: red;
+        opacity: 0.3;
+        color: black;
+      }
+      button:focus {
+        outline: 0;
       }
     </style>
 
@@ -27,15 +58,13 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <script src="main.js"></script>
+    <script src="popup.js" type="text/javascript"></script>
   </head>
   <body>
-    <div id="feedback">
+    <form id="feedback">
       Add a warning for this site?
-      <button id="yesbtn">Yes</button> <button id="nobtn">No</button>
-    </div>
-
-    <div id="status"></div>
-    <img id="image-result" hidden>
+      <br>
+      <button id="yesbtn" type="submit" form="feeback">YES</button>
+    </form>
   </body>
 </html>
