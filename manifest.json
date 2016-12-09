@@ -7,7 +7,8 @@
         {
           "js": [
             "./jquery.min.js",
-            "./main.js"
+            "./main.js",
+            "./popup.js"
           ],
           
           "matches": [
